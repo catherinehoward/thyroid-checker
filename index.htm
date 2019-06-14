@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thyroid checker</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>Check your Thyroid hormones</h1>
+    </header>
+    <main class="main">
+					<p>Enter the values in the fields, then click "Check levels".</p>
+          <form id="form1">
+            <p><label for="thyroidhormone">Thyroid hormone: </label>
+						<select id = "thyroidhormone">
+						    <option value="TSH">TSH</option>
+                <option value="FT3">FT3</option>
+                <option value="FT4">FT4</option>     
+            </select></p>
+            <p><label for="amount">Hormone amount:  </label><input name = "amount" type= "number" step="0.1" id = "amount" required /></p>
+            <p><label for="bottom">Bottom of range: </label><input name = "bottom" type= "number" step="0.1" id = "bottom" required /></p>
+						<p><label for="top">Top of range: </label><input name = "top" type= "number" step="0.1" id = "top" required /></p>
+            <p><button onclick = "calculateRangePosition()">Check levels</button><p/>
+          </form>
+          <p id = "result"></p>
+          
+        <br><br>
+    </main>
+</body>
+</html>
