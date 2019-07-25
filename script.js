@@ -1,9 +1,9 @@
 function calculateRangePosition(){
 
 	var hormone = document.getElementById("thyroidhormone").value;
-	var amount = document.getElementById("amount").value;
-	var rangeBottom = document.getElementById("bottom").value;
-  var rangeTop = document.getElementById("top").value;
+	var amount = parseFloat(document.getElementById("amount").value);
+	var rangeBottom = parseFloat(document.getElementById("bottom").value);
+  var rangeTop = parseFloat(document.getElementById("top").value);
 	var theResult = "";
 	var position = false;
 
@@ -36,8 +36,8 @@ function calculateRangePosition(){
 			exit;
 	  }
 	if (position){
-		document.getElementById("result").innerHTML = "Your " + hormone + " level is " + theResult;
-	return theResult;
+		document.getElementById("result").innerHTML = "Your " + hormone + " level is " + theResult +".";
+	  return theResult;
 	}
 }
 
