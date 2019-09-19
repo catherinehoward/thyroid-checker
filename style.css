@@ -1,1 +1,37 @@
-/* Layout */
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.masthead {
+    padding: 1em 2em;
+    background-color: #9370db;
+    color: white;
+}
+
+.masthead h1, #results-box h2, p#result{
+    text-align: center;
+}
+
+.main {
+    padding: 1em 1em;
+		max-width: 550px;
+    margin: 0 auto;
+}
+
+button {
+    padding:0.5em;
+}
+
+p#result {
+    border: 5px solid;
+		border-radius:5px;
+    padding: 2em;    
+}
+
+#results-box {
+    visibility:hidden;
+}
